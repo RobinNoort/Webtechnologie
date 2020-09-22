@@ -8,8 +8,8 @@
 # Schooljaar 1
 
 ## Periode 1
-### Opdracht 1
-- [A](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/A)
-- [B](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/B)
-- [C](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/C)
-- [D](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/D)
+- [1A](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/A)
+- [1B](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/B)
+- [1C](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/C)
+- [1D](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/D)
+- [2](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%202)
