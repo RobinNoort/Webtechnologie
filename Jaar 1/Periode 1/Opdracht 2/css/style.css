@@ -5,6 +5,9 @@ h1 {
 #lidl {
     list-style-type: square;
 }
+#nonfood {
+    list-style-type: lower-alpha
+}
 
 
 #ah {
