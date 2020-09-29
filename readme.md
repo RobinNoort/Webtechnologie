@@ -3,7 +3,7 @@
 
 # Wat ik gebruik?
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
+- [JetBrains IDEA Ultimate](https://www.jetbrains.com/idea/)
 
 # Schooljaar 1
 
