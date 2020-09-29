@@ -1,0 +1,13 @@
+nav {
+    background-color: grey;
+}
+nav a {
+    color: white;
+}
+#dontpanic {
+    outline-style: dotted;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+}
