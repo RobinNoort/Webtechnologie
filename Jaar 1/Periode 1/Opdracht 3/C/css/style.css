@@ -7,8 +7,11 @@ nav a {
 #dontpanic {
     outline-style: dotted;
 }
-table {
-    outline-style: double;
+table, td, tr {
+    padding: 7px;
+    font-size: 15px;
+    border-collapse: inherit;
+    vertical-align: top;
 }
 nav a:hover {
     background-color: white;
