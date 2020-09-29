@@ -13,3 +13,6 @@
 - [Opdracht 1C](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/C)
 - [Opdracht 1D](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%201/D)
 - [Opdracht 2](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%202)
+- [Opdracht 3A](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%203/A)
+- [Opdracht 3B](https://github.com/RoelofNoort/Webtechnologie/tree/master/Jaar%201/Periode%201/Opdracht%203/B)
+
