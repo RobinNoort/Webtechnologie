@@ -9,9 +9,12 @@ nav a {
 }
 table, td, tr {
     padding: 7px;
-    font-size: 15px;
+    font-size: 17px;
     border-collapse: inherit;
     vertical-align: top;
+}
+table, tr {
+    border: 1px solid #666688;
 }
 nav a:hover {
     background-color: white;
