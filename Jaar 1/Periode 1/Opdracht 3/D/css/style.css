@@ -1,0 +1,19 @@
+nav {
+    background-color: grey;
+}
+nav a {
+    color: white;
+}
+#dontpanic {
+    outline-style: dotted;
+}
+table, td, tr {
+    padding: 7px;
+    font-size: 15px;
+    border-collapse: inherit;
+    vertical-align: top;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+}
