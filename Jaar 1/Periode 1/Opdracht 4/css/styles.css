@@ -1,0 +1,51 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	font-family: arial;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section {
+	width: 300px;
+    flex: 1 1 auto;
+}
+
+main section img {
+	width: 300px;
+}
+
+body > header > section:first-of-type {
+	padding: 6px;
+	background-color: lime;
+}
+body > header > section h1:first-of-type {
+	font-size: 40px;
+}
+
+body > header > nav {
+	background-color: black;
+	padding: 10px;
+}
+body > header > nav a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	margin: 10px;
+}
+
+body > main > section {
+	border: 1px solid black;
+	text-align: left;
+}
+main section {
+	border: 1px solid black;
+	margin: 15px;
+}
