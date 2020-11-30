@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid toepassen</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "banner banner banner" "main main aside" "footer footer footer";
+        }
+        #banner {
+            grid-area: banner;
+            background-color: #8ca0ff;
+            padding: 100px;
+        }
+        #main {
+            grid-area: main;
+            background-color: red;
+            padding: 120px;
+        }
+        #aside {
+            grid-area: aside;
+            background-color: aqua;
+            padding: 50px;
+        }
+        #footer {
+            grid-area: footer;
+            background-color: purple;
+            padding: 20px;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="banner"></div>
+        <div id="main"></div>
+        <div id="aside"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

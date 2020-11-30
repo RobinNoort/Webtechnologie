@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(parameter){
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die controleert of parameter gelijk is aan 3 (Number) of aan "3" (String)
+        // Dat wordt in resultaat gezet. Bijvoorbeeld:
+        // '3' geeft true
+        // 3 geeft true
+        // '4' geeft false
+        // 4 geeft false
+        // 'hallo' geeft false
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat = false;
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        resultaat = (parameter == 3) ? true : false;
+
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([3], true, opdracht);
+    test(["3"], true, opdracht);
+    test(["hallo"], false, opdracht);
+    test(["4"], false, opdracht);
+    test([4], false, opdracht);
+
+</script>
+
+
+</body>
+</html>

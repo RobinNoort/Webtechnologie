@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(parameter){
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die in de variabele resultaat het volgende zet:
+        // Twee keer de string uit paramater.
+        // Bijvoorbeeld:
+        // "hallo" heeft als resultaat "hallohallo"
+        // 5 heeft als resultaat "55" en NIET 10!
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat;
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        resultaat = String(parameter) + String(parameter);
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test(["goedendag"], 'goedendaggoedendag', opdracht);
+    test([5], '55', opdracht);
+    test(["5"], '55', opdracht);
+
+
+</script>
+
+
+</body>
+</html>

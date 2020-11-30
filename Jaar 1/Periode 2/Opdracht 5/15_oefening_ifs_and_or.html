@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(parameter1, parameter2){
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die controleert:
+        // parameter1 is "admin" EN parameter2 is "1234" OF parameter1 is "user" EN parameter2 is "wachtwoord"
+        // Dat wordt in resultaat gezet. Bijvoorbeeld:
+        // 3 geeft true en '3' geeft false
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat = false;
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        // if(parameter1 ??? "admin" EN parameter2 ??? "1234" OF parameter1 ??? "user" EN parameter2 ??? "wachtwoord") {
+        //
+        // }
+        resultaat = ((parameter1 === "admin" && parameter2 === "1234") || (parameter1 === "user" && parameter2 === "wachtwoord")) ? true : false;
+
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test(["admin","1234"], true, opdracht);
+    test(["user","wachtwoord"], true, opdracht);
+    test(["1234","admin"], false, opdracht);
+    test(["wachtwoord","user"], false, opdracht);
+    test(["admin","wachtwoord"], false, opdracht);
+    test(["user","1234"], false, opdracht);
+
+</script>
+
+
+</body>
+</html>

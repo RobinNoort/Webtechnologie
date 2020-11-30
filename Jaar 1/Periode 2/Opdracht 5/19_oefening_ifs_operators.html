@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(getal1, getal2){
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier met behulp van if-statements de code die twee getallen sorteert
+        // Bijvoorbeeld:
+        // 7, -2 heeft als resultaat "-2 7"
+        // 3, 5 heeft als resultaat "3 5"
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat = "";
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        let arr = [getal1, getal2].sort();
+        resultaat = arr.join(" ");
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([1,1], "1 1", opdracht);
+    test([-1,-1], "-1 -1", opdracht);
+    test([0,-1], "-1 0", opdracht);
+    test([2,3], "2 3", opdracht);
+
+</script>
+
+
+</body>
+</html>

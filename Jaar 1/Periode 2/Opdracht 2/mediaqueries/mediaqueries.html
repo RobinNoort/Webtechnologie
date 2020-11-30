@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mediaqueries</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
+        #red {
+            background-color: red;
+            padding: 140px;
+        }
+        #yellow {
+            background-color: yellow;
+            padding: 140px;
+        }
+        #blue {
+            background-color: blue;
+            padding: 140px;
+        }
+        #red, #yellow, #blue {
+            horiz-align: center;
+            vertical-align: top;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 600px) and (orientation: portrait) {
+            #container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="red"><h1>A</h1></div>
+        <div id="yellow"><h1>B</h1></div>
+        <div id="blue"><h1>C</h1></div>
+    </div>
+</body>
+</html>

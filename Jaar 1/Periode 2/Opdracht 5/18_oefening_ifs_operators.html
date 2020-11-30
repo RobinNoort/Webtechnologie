@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(getal1, getal2, getal3){
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die controleert of het resultaat van een vermenigvuldiging van drie getallen positief of negatief is
+        // Bijvoorbeeld:
+        // 3, 7, -2 geeft "-" als resultaat (bij een positief getal of 0 een "+")
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat = "";
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        const multiply = getal1 * getal2 * getal3;
+
+        resultaat = (multiply >= 0) ? "+" : "-";
+
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([1,1,-1], "-", opdracht);
+    test([1,1,1], "+", opdracht);
+    test([-1,-1,1], "+", opdracht);
+    test([-1,-1,-1], "-", opdracht);
+    test([0,-11,1], "+", opdracht);
+    test([-0,-1,-1], "+", opdracht);
+
+</script>
+
+
+</body>
+</html>
