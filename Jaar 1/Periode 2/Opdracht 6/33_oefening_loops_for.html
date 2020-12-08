@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Opgave
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    function opdracht(getal) {
+
+        // ******************************************************************************************************************
+        // Schrijf met behulp van een WHILE-loop de code die het volgende patroon maakt afhankelijk van het doorgegeven getal
+        // Bijvoorbeeld:
+        // getal=3: * **  ***
+        // getal=5: * **  *** **** *****
+        // getal<=1: *
+        // ******************************************************************************************************************
+
+        // ****************************************
+        // Hier jouw code (HIERVOOR NIET AANPASSEN)
+
+
+        let resultaat = "";
+        // let i =0;
+        // while(i < ...) {
+        //  i++;
+        // }
+        let i = 0;
+        while(i < getal) {
+            resultaat += "*".repeat(i + 1) + " ";
+            i++;
+        }
+        if(getal <= 1) resultaat = "*";
+        resultaat = resultaat.trim();
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([-1], "*", opdracht);
+    test([0], "*", opdracht);
+    test([1], "*", opdracht);
+    test([2], "* **", opdracht);
+    test([10], "* ** *** **** ***** ****** ******* ******** ********* **********", opdracht);
+
+</script>
+
+
+</body>
+
+</html>

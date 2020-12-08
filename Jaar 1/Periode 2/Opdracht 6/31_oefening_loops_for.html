@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Opgave
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    function opdracht(getal) {
+
+        // ******************************************************************************************************************
+        // Schrijf hier met behulp van een FOR-loop die terugtelt afhankelijk van het doorgegeven getal
+        // Bijvoorbeeld:
+        // getal < 1: Buiten bereik
+        // getal=0: 0
+        // getal=1: 1   0
+        // getal=3: 3   2   1   0
+        // getal=6: 6   5   4   3   2   1   0
+        // ******************************************************************************************************************
+
+        // ****************************************
+        // Hier jouw code (HIERVOOR NIET AANPASSEN)
+
+        let resultaat = "";
+
+        for(var i=getal; i >= 0; i--) {
+            resultaat += i + " ";
+        }
+        resultaat = (getal < 0) ? "Buiten bereik" : resultaat;
+
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat.trim();
+    }
+
+    // Test script
+    test([6], "6 5 4 3 2 1 0", opdracht);
+    test([1], "1 0", opdracht);
+    test([0], "0", opdracht);
+    test([-1], "Buiten bereik", opdracht);
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Opgave
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    function opdracht(getal) {
+
+        // ******************************************************************************************************************
+        // Schrijf hier de code om getallen (1 tot 5) om te zetten naar uitgeschreven getallen (een tot vijf)
+        // Bijvoorbeeld:
+        // getal = 5 wordt "vijf"
+        // getal < 1 || getal > 5 wordt "Geen resultaat"
+        // ******************************************************************************************************************
+
+        // ****************************************
+        // Hier jouw code (HIERVOOR NIET AANPASSEN)
+
+
+        let resultaat = "Geen resultaat";
+        // ...
+        switch(getal) {
+            case 1:
+                resultaat = "een";
+                break;
+            case 2:
+                resultaat = "twee";
+                break;
+            case 3:
+                resultaat = "drie";
+                break;
+            case 4:
+                resultaat = "vier";
+                break;
+            case 5:
+                resultaat = "vijf";
+                break;
+            default:
+                resultaat = "Geen resultaat";
+                break;
+        }
+
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([-1], "Geen resultaat", opdracht);
+    test([0], "Geen resultaat", opdracht);
+    test([1], "een", opdracht);
+    test([2], "twee", opdracht);
+    test([3], "drie", opdracht);
+    test([4], "vier", opdracht);
+    test([5], "vijf", opdracht);
+
+</script>
+
+
+</body>
+
+</html>

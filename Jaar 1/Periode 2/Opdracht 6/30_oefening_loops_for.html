@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Opgave
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    function opdracht(getal){
+
+        // ******************************************************************************************************************
+        // Schrijf hier met behulp van een FOR-loop de code die vanaf 0 kan tellen afhankelijk van het doorgegeven getal
+        // Bijvoorbeeld:
+        // getal < 1 of getal > 5: Buiten bereik
+        // getal=0: 0
+        // getal=1: 0 1
+        // getal=3: 0 1 2 3
+        // getal=5: 0 1 2 3 4 5
+        // ******************************************************************************************************************
+
+        // ****************************************
+        // Hier jouw code (HIERVOOR NIET AANPASSEN)
+
+        let resultaat = "";
+        // if () {
+        //
+        // } else {
+        //   for (let i = 0; i <= ...; i++) {
+        //    resultaat += ...
+        //   }
+        // }
+        for(var i=0; i <= getal; i++) {
+            resultaat += i + " ";
+        }
+        resultaat = (getal > 5 || getal < 0) ? "Buiten bereik" : resultaat;
+
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat.trim();
+    }
+
+    // Test script
+    test([5], "0 1 2 3 4 5", opdracht);
+    test([1], "0 1", opdracht);
+    test([0], "0", opdracht);
+    test([6], "Buiten bereik", opdracht);
+    test([-1], "Buiten bereik", opdracht);
+
+</script>
+
+
+</body>
+</html>
