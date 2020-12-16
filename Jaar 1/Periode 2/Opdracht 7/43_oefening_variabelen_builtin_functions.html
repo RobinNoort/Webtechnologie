@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(prm) {
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die in de variabele resultaat het volgende zet:
+        // Tel bij de value in parameter een random nummer tussen 0 en 1 op.
+        // Bijvoorbeeld:
+        // 3.2 heeft als resultaat 4.1
+        // 15 heeft als resultaat 15.4
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat;
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        // let rand = (Math.random() * (1-0)+0).toFixed(1);
+        let rand = Math.random().toFixed(1);
+        resultaat = (parseFloat(prm) + parseFloat(rand)).toPrecision(2);
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([3.2], 3, opdracht)
+    test([3.5], 4, opdracht)
+
+</script>
+
+
+</body>
+</html>

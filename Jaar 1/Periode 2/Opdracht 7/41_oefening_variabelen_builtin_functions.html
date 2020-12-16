@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Oefenen van if's en loops in javascript</title>
+  <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(prm){
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die in de variabele resultaat het volgende zet:
+        // De afgeronde value in de parameter 'prm' (je mag er vanuitgaan dat prm altijd een number is).
+        // Bijvoorbeeld:
+        // 5.2 heeft als resultaat 5
+        // -10.9 heeft als resultaat -11
+        // 0 heeft als resultaat 0
+        // Zoek op internet hoe je in javascript een getal moet afronden (denk aan de zoekterm: techniek, vraag in het Engels).
+        // Kies voor MDN in de zoekresultaten.
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat;
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        resultaat = Math.round(prm);
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test([1.8], 2, opdracht);
+    test([5.2], 5, opdracht);
+    test([-10.9], -11, opdracht);
+    test([0], 0, opdracht);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Oefenen van if's en loops in javascript</title>
+    <script src="./testlibrary.js"></script>
+</head>
+<body>
+
+<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+<p>Pas de code zo aan dat alle tests lukken</p>
+
+<script>
+    function opdracht(prm) {
+
+        // /////////////////////////////////////////////////////////////////////////////////
+        // Opgave: schrijf hier de code die:
+        // Uit de value in parameter de tweede tot en met de zesde letter filtert. Zet deze in resultaat.
+        // Bijvoorbeeld:
+        // "Dit is een zin" heeft als resultaat "it is"
+        // "Pietje Puk beleeft een avontuur" heeft als resultaat "ietje"
+        // /////////////////////////////////////////////////////////////////////////////////
+
+        let resultaat;
+        // ****************************************
+        // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+        // resultaat = prm.slice(1,6);
+        resultaat = prm.substr(1, 5);
+
+        // Tot hier (HIERNA NIET AANPASSEN)
+        // ****************************************
+        return resultaat;
+    }
+
+    // Test script
+    test(["Dit is een zin"], 'it is', opdracht)
+    test(["Pietje Puk beleeft een avontuur"], 'ietje', opdracht)
+
+</script>
+
+
+</body>
+</html>
