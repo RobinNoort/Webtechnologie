@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Oefenen van if's en loops in javascript</title>
+	<script src="testlibrary.js"></script>
+</head>
+<body>
+
+	<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+	<p>Pas de code zo aan dat alle tests lukken</p>
+
+	<script>
+		function opdracht() {
+
+			// /////////////////////////////////////////////////////////////////////////////////
+			// Opgave: schrijf hier een functie die aan het begin van de doorgegeven parameter de string "<p>" plakt en achter de parameter "</p>":
+			// String toparagraph(parameter)
+			// Bijvoorbeeld:
+			// "Dit is een tekst" geeft als resultaat "<p>Dit is een tekst</p>"
+			// /////////////////////////////////////////////////////////////////////////////////
+
+			function toParagraph(parameter) {
+				// ****************************************
+				// Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+				return "<p>" + parameter + "</p>";
+				// Tot hier (HIERNA NIET AANPASSEN)
+				// ****************************************
+			}
+
+			return toParagraph;
+		}
+
+
+		// Test script
+		test(["Dit is een tekst"], "<p>Dit is een tekst</p>", opdracht());
+		test([""], "<p></p>", opdracht());
+
+	</script>
+
+</body>
+</html>

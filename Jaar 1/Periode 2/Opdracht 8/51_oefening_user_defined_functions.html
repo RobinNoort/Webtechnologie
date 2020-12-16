@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Oefenen van if's en loops in javascript</title>
+	<script src="testlibrary.js"></script>
+</head>
+<body>
+
+	<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+	<p>Pas de code zo aan dat alle tests lukken</p>
+
+	<script>
+		function opdracht() {
+
+			// /////////////////////////////////////////////////////////////////////////////////
+			// Opgave: schrijf hier een functie met de naam add die twee getallen kan optellen en dat teruggeeft:
+			// Number add(number1, number2)
+			// Bijvoorbeeld:
+			// getal=1, getal2=3 => 4
+			// /////////////////////////////////////////////////////////////////////////////////
+
+			function add(number1, number2) {
+				// ****************************************
+				// Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+
+
+				return number1 + number2;
+
+				// Tot hier (HIERNA NIET AANPASSEN)
+				// ****************************************
+			}
+
+			return add;
+		}
+
+		// Test script
+		test([0, 1], 1, opdracht());
+		test([1, 1], 2, opdracht());
+		test([1, 0], 1, opdracht());
+		test([-1, 0], -1, opdracht());
+		test([0, -1], -1, opdracht());
+
+	</script>
+
+</body>
+</html>

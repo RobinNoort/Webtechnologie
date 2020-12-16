@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Oefenen van if's en loops in javascript</title>
+	<script src="testlibrary.js"></script>
+</head>
+<body>
+
+	<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+	<p>Pas de code zo aan dat alle tests lukken</p>
+
+	<script>
+		function opdracht() {
+
+			// /////////////////////////////////////////////////////////////////////////////////
+			// Opgave: schrijf hier een functie met de naam xor die twee booleans kan vergelijken.
+			// Als ze beide false zijn of beide true dan geeft de functie false terug.
+			// In alle andere gevallen geeft de functie true terug.
+			// Bijvoorbeeld:
+			// b1: true en b2: true geeft true terug
+			// b2: false en b2: false geeft true terug
+			// b2: false en b2: true geeft false terug
+			// b2: true en b2: false geeft false terug
+			// /////////////////////////////////////////////////////////////////////////////////
+
+			// ****************************************
+            // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+            
+            function xor(bool1, bool2) {
+                if(bool1 == true && bool2 == true || bool1 == false && bool2 == false) return true;
+                return false;
+            }
+
+
+			// Tot hier (HIERNA NIET AANPASSEN)
+			// ****************************************
+			return xor;
+		}
+
+		// Test script
+		test([false, true], false, opdracht());
+		test([true, false], false, opdracht());
+		test([true, true], true, opdracht());
+		test([false, false], true, opdracht());
+
+	</script>
+
+</body>
+</html>
