@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Oefenen over array en functies</title>
+</head>
+<body>
+
+	<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+	<p>Pas de code zo aan dat alle tests lukken</p>
+
+	<script>
+
+		// Maak een functie die de parameters in een array teruggeeft:
+		function toArray(p1, p2, p3) {
+			return [p1, p2, p3];
+		}
+
+		// Roep nu de functie aan
+		const numArray = toArray(1, 2, 3); // numbers
+		const textArray = toArray("Hallo ", "wereld", ""); // strings
+
+		// Tel getallen bij elkaar op
+		function optellen(arr) {
+			let antwoord = 0;
+			for (let i = 0; i < arr.length; i++) {
+				antwoord += parseInt(arr[i]);
+			}
+			return antwoord;
+		}
+		console.log(optellen(numArray)); // 6
+
+		// Plak teksten aan elkaar vast
+		function concatenate(arr) {
+			let antwoord = "";
+			for (let i = 0; i < arr.length; i++) {
+				antwoord += arr[i];
+			}
+			return antwoord;
+		}
+		console.log(concatenate(textArray)); // "Hallo wereld"
+
+	</script>
+
+</body>
+</html>

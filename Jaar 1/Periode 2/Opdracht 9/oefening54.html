@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Oefenen van if's en loops in javascript</title>
+	<script src="testlibrary.js"></script>
+</head>
+<body>
+
+	<h1>Bekijk in de developer tools de resultaten van de tests</h1>
+	<p>Pas de code zo aan dat alle tests lukken</p>
+
+	<script>
+		function opdracht(... arr) {
+
+			// ///////////////////////////////////////////////////////////////////////////////////////////////////
+			// Opgave: schrijf hier de code die de getallen in de array arr bij elkaar optelt en in resultaat zet.
+			// Bijvoorbeeld:
+			// [1,2,3] => in resultaat 6
+			// [-1, 0 ,2] => in resultaat 1
+			// /////////////////////////////////////////////////////////////////////////////////
+
+			let resultaat = 0;
+			// ****************************************
+            // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
+            
+            resultaat = arr.reduce((a, b) => a + b, 0)
+
+			// hint: gebruik een for-loop en het array 'arr'.
+
+			// Tot hier (HIERNA NIET AANPASSEN)
+			// ****************************************
+			return resultaat;
+		}
+
+		// Test script
+		test([1, 2, 3], 6, opdracht);
+		test([-1, 0, 2], 1, opdracht);
+
+	</script>
+
+
+</body>
+</html>
