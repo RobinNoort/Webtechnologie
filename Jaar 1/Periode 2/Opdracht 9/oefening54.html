@@ -23,8 +23,8 @@
 			let resultaat = 0;
 			// ****************************************
             // Hieronder jouw code (HIERVOOR NIET AANPASSEN)
-            
-            resultaat = arr.reduce((a, b) => a + b, 0)
+			//                     acc, cv => acc + cv
+            resultaat = arr.reduce((a, b) => a + b, 0);
 
 			// hint: gebruik een for-loop en het array 'arr'.
 
@@ -32,6 +32,9 @@
 			// ****************************************
 			return resultaat;
 		}
+		// function opdracht(...arr) {
+		// 	return arr.reduce((a, b) => a + b, 0);
+		// }
 
 		// Test script
 		test([1, 2, 3], 6, opdracht);

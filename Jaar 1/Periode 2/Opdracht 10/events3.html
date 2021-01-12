@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <span id="groet">Hallo</span>
+        <button id="btn">Verander tekst</button>
+            <script>
+
+                const b = document.getElementById("btn")
+                b.addEventListener('click', () => {
+                    const x = document.getElementById("groet");
+                    x.innerHTML = "Roelof";
+                    x.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+                });
+            </script>
+    </body>
+</html>
